@@ -1,0 +1,61 @@
+.hero {
+
+  &__description {
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-family: $ff-main-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.9rem;
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+
+  &__wrap {
+    height: 615px;
+  }
+
+  &__slider-btn{
+    position: absolute;
+  }
+
+  &__slider-counter {
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    width: 30px;
+  }
+
+  &__btn-lft,
+  &__btn-rght {
+    width: 9px;
+    height: 21px;  
+  }
+
+  &__btn-lft {
+    background-image: url(/images/icons/arrow-left.png);
+  }
+
+  &__btn-rght {
+    background-image: url(/images/icons/arrow-right.png);
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.social-icons_hero_position_bottom {
+  position: absolute;
+  bottom: 20px;
+}

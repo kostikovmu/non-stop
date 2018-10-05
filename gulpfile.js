@@ -8,7 +8,9 @@ const rename          = require('gulp-rename');
 const uglify          = require('gulp-uglify');
 const concat          = require('gulp-concat')
 const sourcemaps      = require('gulp-sourcemaps');
-
+const plumber         = require('gulp-plumber');
+const notify          = require("gulp-notify");
+const cssnano         = require('gulp-cssnano');
 
 /* -------- Server  -------- */
 gulp.task('server', function() {
@@ -54,6 +56,39 @@ gulp.task('js', function () {
 
 });
 
+/* ------------ libs ------------- */
+gulp.task('libs', function() {
+  gulp.src([
+    './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/jquery-migrate/dist/jquery-migrate.min.js',
+    './node_modules/slick-carousel/slick/slick.min.js'
+  ])
+  .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+  .pipe(concat('libs.min.js'))
+  .pipe(uglify())
+  .pipe(sourcemaps.write())
+  .pipe(gulp.dest('build/js'));
+
+  gulp.src([
+    './node_modules/font-awesome/fonts/fontawesome-webfont.ttf',
+    './node_modules/font-awesome/fonts/fontawesome-webfont.woff',
+    './node_modules/font-awesome/fonts/fontawesome-webfont.woff2'
+  ])
+  .pipe(gulp.dest('build/fonts'));
+
+  return gulp.src([
+    './node_modules/bootstrap/dist/css/bootstrap.min.css',
+    './node_modules/slick-carousel/slick/slick.css',
+    './node_modules/font-awesome/css/font-awesome.css'
+  ])
+  .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+  .pipe(concat('libs.min.css'))
+  .pipe(cssnano())
+  .pipe(sourcemaps.write())
+  .pipe(gulp.dest('build/css'));
+
+})
+
 /* ------------ Sprite ------------- */
 gulp.task('sprite', function(cb) {
   const spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
@@ -75,6 +110,7 @@ gulp.task('clean', function del(cb) {
 gulp.task('clean-img', function (cb) {
   return rimraf('build/images', cb);
 })
+
 
 /* ------------ Copy fonts ------------- */
 gulp.task('copy:fonts', function() {
@@ -102,7 +138,7 @@ gulp.task('watch', function() {
 /*------------- default -------------*/
 gulp.task('default', gulp.series(
   'clean',
-  gulp.parallel('templates:compile', 'styles:compile','js', 'sprite', 'copy'),
+  gulp.parallel('templates:compile', 'styles:compile','js','libs', 'sprite', 'copy'),
   gulp.parallel('watch', 'server')
   )
 );

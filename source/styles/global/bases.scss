@@ -1,7 +1,16 @@
 body {
-  font-family: $ff-main;
+  font-family: $ff-main !important;
   margin: 0;
 }
 * {
-  transition: .3s;
+  transition: .3s;  
+}
+
+a {
+  color: #000;
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
 }

@@ -1,8 +1,24 @@
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .phone {
   letter-spacing: 2px;
+}
+.button {
+  border: none;
+  background-color: #f02e53;
+  color: #fff;
+  padding: 12px 38px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 28px;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color: #f02e53, $amount: 10)
+  }
+}
+
+.social-icons {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
 }
