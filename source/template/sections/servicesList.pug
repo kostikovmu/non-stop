@@ -1,0 +1,39 @@
+-
+  var list = {
+    'src':[
+      'images/page-1/section-1/megaphone.png',
+      'images/page-1/section-1/quaver.png',
+      'images/page-1/section-1/startup.png',
+      'images/page-1/section-1/school-material.png',
+      'images/page-1/section-1/profits.png',
+      'images/page-1/section-1/dots.png',
+    ],
+    'title':[
+      'btl',
+      'event',
+      'trade',
+      'комплексная реклама',
+      'маркетинговые исследования',
+      'и еще много других услуг',
+    ],
+    'description': [
+      ['Подарок за покупку', 'Дегустации', 'Раздача листовок'],
+      ['Бизнес мероприятия', 'Корпоротивные решения', 'Городские праздники'],
+      ['Мерчендайзинг', 'Стационарный мерчендайзинг', 'Визитный мерчендайзинг'],
+      ['Креативные решения', 'Корпоративные подарки и бизнес сувениры'],
+      ['Тайный покупатель, аудит'],
+      ['Узанать больше'],
+    ]
+  }
+
+each item, index in list.title
+  .col-lg-4.services__item
+    .d-flex
+          .services__img
+            img(src= list.src[index] , alt= item)
+          .services__text
+            .services__title= item
+            .services__description
+              ul.services__text-list
+                each item2 in list.description[index]
+                  li.services__text-item= item2

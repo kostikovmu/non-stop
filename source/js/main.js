@@ -1,6 +1,5 @@
 $(document).ready(function(){
-  $('.slider').slick({
-    
+  $('.slider').slick({    
     infinite: false,
     slidesToShow: 1,
     prevArrow: $('.hero__btn-lft'),
