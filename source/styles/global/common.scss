@@ -11,6 +11,8 @@
   border-radius: 28px;
   font-size: 0.9rem;
   cursor: pointer;
+  display: block;
+  margin: auto;
 
   &:hover {
     background-color: darken($color: #f02e53, $amount: 10)
@@ -21,4 +23,12 @@
   width: 100px;
   display: flex;
   justify-content: space-between;
+}
+
+.section-heder {
+  font-family: $ff-main-semiBold;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: 3px;
 }

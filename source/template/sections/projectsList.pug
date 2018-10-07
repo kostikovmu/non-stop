@@ -1,0 +1,27 @@
+-
+  var list = {
+    name: [
+    'project-1',
+    'project-2',
+    'project-3',
+    'project-4',
+    'project-5',
+    'project-6',
+  ],
+  description: [
+    'Интерактивная презентация нового сезона сериала «Физрук» от телеканала «ТНТ»',
+    'Интерактивная презентация нового сезона сериала «Физрук» от телеканала «ТНТ»',
+    'Интерактивная презентация нового сезона сериала «Физрук» от телеканала «ТНТ»',
+    'Интерактивная презентация нового сезона сериала «Физрук» от телеканала «ТНТ»',
+    'Интерактивная презентация нового сезона сериала «Физрук» от телеканала «ТНТ»',
+    'Интерактивная презентация нового сезона сериала «Физрук» от телеканала «ТНТ»',
+  ]
+  }
+
+each item, index in list.name
+  .col-lg-4.projects__item-wrap
+    .projects__item-img
+      img.img-fluid.projects__img(src= 'images/page-1/section-2/' + item + '.png', alt= item)
+    .projects__item-text
+      .projects__description= list.description[index]
+      a.projects__more(href="#") Подробнее
