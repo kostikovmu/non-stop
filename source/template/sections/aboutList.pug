@@ -1,0 +1,26 @@
+-
+  var list = {
+    'img': [
+      'handshake',
+      'wallet',
+      'unlock'
+    ],
+    'title': [
+      'опыт работы более 14 лет',
+      'разный бюджет',
+      'под ключ'
+    ],
+    'description': [
+      'Благодаря длительной успешной работе на рекламном рынке, мы стали обладателями уникальной копилки знаний и навыков, связей и контактов.',
+      'Умеем работать с разными бюджетами, поэтому всегда укладываемся в обозначенную вами цифру, с точным обоснованием каждого пункта затрат.',
+      'Мы объединяем различные направления – вам останется лишь сформулировать цель, и мы предложим вам различные варианты, от BTL до event.'
+    ]
+  }
+
+each item, index in list.img
+  .col-lg-4
+    .about__item
+      .d-flex
+        .about_img: img(src= "/images/page-1/section-4/" + item + '.png', alt= item)
+        .about__heder-wrap.d-flex.align-items-center: .about__heder.about__heder_position= list.title[index]
+      .about__description= list.description[index]
