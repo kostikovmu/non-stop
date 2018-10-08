@@ -1,0 +1,48 @@
+-
+  var list = {
+    'tag': [
+      'event',
+      'btl',
+      'реклама'
+    ],
+    'date': [
+      '25.01.2018',
+      '28.01.2018',
+      '09.02.2018'
+    ],
+    'title': [
+      'конференция опора россии',
+      'Агентство «НОН СТОП» в предверии Нового Года',
+      'Скоро МАСЛЕНИЦА, а как вы готовитесь к проводам зимы? '
+    ],
+    'description': [
+      'Сегодня 19.01.2018г. состоялась внеочередная конференция Ульяновского Регионального отделения «ОПОРА РОССИИ».',
+      'Агентство "НОН СТОП" в предверии Нового Года провели дегустацию в куснейшего кофе BUSHIDO!',
+      'Плетение из лыка – одно из старейших ремесел на Руси. Куклы из лыка были не просто игрушками ...'
+    ],
+    'views': [
+      '145',
+      '105',
+      '115'
+    ],
+    'img': [
+      'article22',
+      'article24',
+      'article25'
+    ]
+  }
+
+each item, index in list.tag
+  .col-lg-4.news__item-wrap: .news__item
+    .d-flex.justify-content-between.news__hf-wrap.news__head
+      .news__tag= item
+      .news__date= list.date[index]
+    img(src= 'images/page-1/section-5/' + list.img[index] + '.png', alt= list.img[index])
+    .news__text-wrap
+      .news__title= list.title[index]
+      .news__description= list.description[index]
+    .d-flex.justify-content-between.news__hf-wrap.news__footer
+      .news__views-wrap.d-flex.align-items-center
+        .news__views-img: img(src="images/page-1/section-5/visible.png", alt="visible")
+        .news__views-count= list.views[index]        
+      .news__more Узать больше
