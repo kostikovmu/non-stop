@@ -1,0 +1,14 @@
+.our-trust {
+  padding: 122px 0;
+
+  &__list {
+    padding-top: 80px;
+  }
+
+  &__item-wrap {
+
+    &:nth-child(-n+8) {
+      margin-bottom: 48px;
+    }
+  }
+}

@@ -13,6 +13,7 @@
   cursor: pointer;
   display: block;
   margin: auto;
+  box-shadow: 0 10px 25px rgba(240, 46, 83, 0.34);
 
   &:hover {
     background-color: darken($color: #f02e53, $amount: 10)
