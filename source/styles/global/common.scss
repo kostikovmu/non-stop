@@ -1,5 +1,6 @@
 .phone {
   letter-spacing: 2px;
+  font-size: 1.2rem;
 }
 .button {
   border: none;
@@ -26,10 +27,22 @@
   justify-content: space-between;
 }
 
+.social-icons_color_gray a{
+  color: #929292;
+}
+.social-icons_size_big {
+  width: 140px;
+  font-size: 1.3rem;
+}
+
 .section-heder {
   font-family: $ff-main-semiBold;
   text-transform: uppercase;
   font-size: 2.2rem;
   text-align: center;
   letter-spacing: 3px;
+}
+
+.phone {
+  font-family: $ff-main-bold;
 }
