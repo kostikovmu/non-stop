@@ -1,0 +1,11 @@
+section.request
+  h3.section-heder Оставить заявку
+  .text-center.request__description Если вы уже знаете, что нужно вашей компании и хотите начать работу, или хотите узнать больше, заполните форму которая ниже.
+  .container: .row.justify-content-center: .col-lg-8
+    form(action="", method="get")
+      .request__input-wrap: input.request__input(type="text" placeholder='Ваше имя')
+      .request__input-wrap: input.request__input(type="text" placeholder='Ваш телефон')
+      .request__input-wrap: textarea.request__input(name="", cols="15", rows="4" placeholder='Введите сообщение')
+      input.button(type="submit" value='отправить')
+  .request__img: img(src="images/page-1/form/contact.png", alt="contact")
+  

@@ -1,0 +1,45 @@
+.request {
+  padding: 120px 0;
+  position: relative;
+
+  &__description {
+    margin: 31px auto 61px auto;
+    width: 650px;
+    color: #a1a1a1;
+    letter-spacing: 1px;
+  }
+
+
+  &__input-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+    
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    width: 72%;
+    padding: 20px 32px;
+    border: 1px solid #878787;
+    border-radius: 23.5px;    
+    letter-spacing: 1px;
+    font-family: $ff-main-light;
+    resize: none;
+
+    ::placeholder {
+      color: #878787;
+    }      
+  }
+
+  &__img {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+
+  }
+  
+}
