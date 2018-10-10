@@ -1,0 +1,17 @@
+.s-hero {
+  height: 647px;
+
+  color: #fff;
+  background-image:url(../images/page-3/header/kofe_ano.png) ;
+  background-color:  #50290e ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+
+    &_position {
+      margin-top: 163px;
+    }
+  }
+}

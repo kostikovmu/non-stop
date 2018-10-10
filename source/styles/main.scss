@@ -4,14 +4,16 @@
 @import "global/common";
 @import "global/bases";
 
-@import "sections/header";
-@import "sections/nav";
-@import "sections/hero-bg-slider";
-@import "sections/hero";
-@import "sections/services";
-@import "sections/projects";
-@import "sections/ourTrust";
-@import "sections/about";
-@import "sections/news";
-@import "sections/request";
-@import "sections/footer";
+@import "sections/main/header";
+@import "sections/main/nav";
+@import "sections/main/hero-bg-slider";
+@import "sections/main/hero";
+@import "sections/main/services";
+@import "sections/main/projects";
+@import "sections/main/ourTrust";
+@import "sections/main/about";
+@import "sections/main/news";
+@import "sections/main/request";
+@import "sections/main/footer";
+
+@import "sections/services/hero";

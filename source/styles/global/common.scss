@@ -19,7 +19,13 @@
   &:hover {
     background-color: darken($color: #f02e53, $amount: 10)
   }
+
+  &_position {
+    margin-left: 0;
+  }
 }
+
+
 
 .social-icons {
   width: 100px;
