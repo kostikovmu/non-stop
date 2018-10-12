@@ -35,19 +35,6 @@
     width: 30px;
   }
 
-  &__btn-lft,
-  &__btn-rght {
-    width: 9px;
-    height: 21px;  
-  }
-
-  &__btn-lft {
-    background-image: url(/images/icons/arrow-left.png);
-  }
-
-  &__btn-rght {
-    background-image: url(/images/icons/arrow-right.png);
-  }
 
   &__btn-wrap {
     display: flex;

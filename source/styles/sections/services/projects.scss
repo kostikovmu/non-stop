@@ -1,0 +1,46 @@
+.s-projects {
+  background-color: #f7f7f7;
+  padding: 100px 0 110px 0;
+
+  &__carousel-wrap {
+
+    margin: 56px 11px 0 11px;
+  }
+
+
+
+  &__item {
+    height: 270px;
+    position: relative;    
+    margin: 0 7px;
+  }
+
+  &__img {
+    width: 375px;
+    border: 10px solid #fff;
+    margin: 0;
+  }
+
+  &__text {
+    padding: 58px 30px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $ff-main-medium;
+  }
+
+  &__description {
+    margin-top: 28px;
+  }
+}

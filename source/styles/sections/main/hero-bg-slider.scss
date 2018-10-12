@@ -24,31 +24,4 @@
     background-image: url(../images/page-1/header/header-3.png);
   }
 }
-.slick-prev,
-.slick-next {
-  z-index: 999;
-  font-size: 0;
-  line-height: 0;
-  width: 9px;
-  height: 21px;  
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  padding: 0;
-  bottom: 5%;
-}
 
-.slick-next {
-  background-image: url(/images/icons/arrow-right.png);
-  right: 15%;
-
-}
-.slick-prev {
-  background-image: url(/images/icons/arrow-left.png);
-  right: 16.5%;
-}
-.slider__number {
-  z-index: 999;
-  position: absolute;
-  bottom: 10%; 
-}

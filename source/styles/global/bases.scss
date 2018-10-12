@@ -8,7 +8,6 @@ body {
   padding: 0;
 }
 * {
-  transition: .3s;  
   letter-spacing: 1px;
   line-height: 1.7rem;
 }
@@ -20,4 +19,36 @@ a {
     color: #000;
     text-decoration: none;
   }
+}
+
+.btn-lft,
+.btn-rght {
+  width: 9px;
+  height: 21px;  
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-lft {
+  background-image: url(/images/icons/arrow-left.png);
+}
+
+.btn-rght {
+  background-image: url(/images/icons/arrow-right.png);
+}
+
+.btn-lft_position_default,
+.btn-rght_position_default {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.btn-rght_position_default {
+  right: 3px;
+}
+.btn-lft_position_default {
+  left: 0;
 }
