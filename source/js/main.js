@@ -18,5 +18,15 @@ $(document).ready(function(){
     prevArrow: $('.btn-lft'),
     nextArrow: $('.btn-rght')
   });
+
+  $('.reviews__carousel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $('.reviews__btn-lft'),
+    nextArrow: $('.reviews__btn-rgth')
+  });
+
+
  
 })

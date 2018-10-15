@@ -1,0 +1,49 @@
+.reviews {
+  padding: 121px 0 171px 0;
+  background: #e9e8ea;
+  background: linear-gradient(to bottom, #ffffff 20%,#e9e8ea 50%,#ffffff 85%);
+
+  &__carousel {
+    margin-top: 71px;
+  }
+
+  &__item {
+    height: 252.5px;
+    margin: 0 11px;
+    padding: 39px 28px;
+    border-radius: 10px;
+    // box-shadow: 0 20px 60px #e7e6e8;
+    background-color: #fff;
+  }
+
+  &__img {
+    margin-right: 28px;
+  }
+
+  &__title {
+
+    &-name {
+      font-family: $ff-main-medium;
+    }
+
+    &-sity {
+      margin-left: 4px;
+    }
+
+    &-bottom {
+      color: #848484;
+      font-family: $ff-main-light;
+    }
+  }
+
+  &__description {
+    margin-top: 25px;
+    color: #848484;
+    font-family: $ff-main-light;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  
+
+}
