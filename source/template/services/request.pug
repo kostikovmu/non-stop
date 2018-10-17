@@ -1,0 +1,15 @@
+section.request
+  h3.section-header Не нашли необходимой информации?
+  .text-center.request__description Отправьте заявку. Мы ответим в ближайшее время.
+  .container: .row.justify-content-center: .col-lg-8
+    form(action="", method="get")
+      .request__input-wrap: input.request__input(type="text" placeholder='Ваше имя*')
+      .request__input-wrap: input.request__input(type="text" placeholder='Ваш телефон или E-mail*')
+      .request__input-wrap: textarea.request__input(name="", cols="15", rows="4" placeholder='Суть вопроса*')
+      .request__input-wrap: .request__field_position.request__description_style * обязательное поле для заполнения
+      .request__input-wrap: label.request__field_position.request__checkbox-container
+        input(type="checkbox", name="personalData")
+        span.request__checkmark
+        span.request__checkbox Я даю согласие на исользование моих перс. данных
+      input.button(type="submit" value='отправить')
+  .request__img: img(src="/images/page-1/form/contact.png", alt="contact")
